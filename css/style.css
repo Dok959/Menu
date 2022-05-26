@@ -1,0 +1,143 @@
+html {
+  font-size: 10px;
+  line-height: 1.15;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: #0f172a;
+}
+main {
+  margin-top: 8rem;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block-title {
+  position: relative;
+  margin: 0 0 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 400;
+  font-size: 4rem;
+}
+.block-title::after {
+  display: block;
+  content: '';
+  height: 0.35rem;
+  width: 10rem;
+  background: #645cff;
+  margin-top: 0.5rem;
+}
+.header__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 3rem auto 5rem;
+}
+li {
+  list-style-type: none;
+  margin-right: 1rem;
+}
+li:last-child {
+  margin-right: 0;
+}
+.btn {
+  background-color: transparent;
+  border: 1px solid #645cff;
+  border-radius: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #645cff;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease-in-out all;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #645cff;
+  color: #ffffff;
+}
+.content-wrapper {
+  display: grid;
+  gap: 4rem 3rem;
+  justify-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 1200px) {
+  .content-wrapper {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.element-menu {
+  display: grid;
+  gap: 2rem 3rem;
+  max-width: 40rem;
+}
+@media screen and (min-width: 768px) {
+  .element-menu {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.75rem;
+    max-width: 65rem;
+  }
+}
+.img {
+  height: 200px;
+  width: 100%;
+  border-radius: 0.5rem;
+  display: block;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .img {
+    height: 175px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img {
+    height: 150px;
+  }
+}
+.element-info {
+  box-sizing: border-box;
+}
+.item-text {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 3px dotted #64748b;
+  box-sizing: border-box;
+}
+.item-title {
+  margin: 0 0 1rem;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #0f172a;
+  letter-spacing: 1px;
+}
+.price {
+  box-sizing: border-box;
+  color: #645cff;
+  letter-spacing: 1px;
+}
+.item-description {
+  margin: 0;
+  color: #64748b;
+  padding-top: 1rem;
+  line-height: 1.75;
+}

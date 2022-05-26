@@ -1,0 +1,85 @@
+@font: 'Roboto', sans-serif;
+@text-color: #0f172a;
+@accent-color: #645cff;
+@transition: 0.3s ease-in-out all;
+
+html {
+	font-size: 10px;
+	line-height: 1.15;
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: @font;
+	font-size: 1.6rem;
+	color: @text-color;
+}
+
+main {
+	margin-top: 8rem;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.block-title {
+	position: relative;
+	margin: 0 0 1.5rem;
+	text-transform: capitalize;
+	text-align: center;
+	font-weight: 400;
+	font-size: 4rem;
+
+	&::after {
+		display: block;
+		content: '';
+		height: 0.35rem;
+		width: 10rem;
+		background: @accent-color;
+		margin-top: 0.5rem;
+	}
+}
+
+.header__center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 3rem auto 5rem;
+}
+
+li {
+	list-style-type: none;
+	margin-right: 1rem;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+@import './components/button.less';
+
+.content-wrapper {
+	display: grid;
+	gap: 4rem 3rem;
+	justify-items: center;
+	width: 90vw;
+	margin: 0 auto;
+	max-width: 1170px;
+
+	@media screen and (min-width: 1200px) {
+		width: 95vw;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@import './components/element-menu.less';

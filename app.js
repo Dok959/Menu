@@ -1,6 +1,6 @@
 'use strict';
 
-function load() {
+document.addEventListener('DOMContentLoaded', () => {
 	const menu = [
 		{
 			id: 1,
@@ -138,6 +138,4 @@ function load() {
 			});
 		});
 	}
-}
-
-load();
+});
